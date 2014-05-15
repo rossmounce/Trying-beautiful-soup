@@ -11,6 +11,7 @@ HTML pages that require subscription access, or that are only temporarily 'free 
 * Initially, I'm going from this guide: http://programminghistorian.org/lessons/intro-to-beautiful-soup (very pretty!)
 * There's also the official docs here: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
 * Looks like there's also been a Software Carpentry session on this in 2013 at KU: http://nbviewer.ipython.org/github/kcranston/2013-08-ku/blob/master/beautifulsoup/notebooks/00-BeautifulSoup-FULL.ipynb 
+* Some help on from people on Twitter too. Thx @srp
 
 # Installation
 
@@ -25,5 +26,6 @@ IPython, ipython-notebook, Beautiful Soup, (and dependencies...)
 
 * Run bash create_subfolders.sh first to create a subfolder for each html file (I would do this in the python script if I knew how!)
 * Iterate over each html file, apply the beautiful soup python script to each:
-
+```
 for i in *.html ; do python get-figures.py $i ; done ;
+```
