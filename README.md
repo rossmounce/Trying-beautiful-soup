@@ -20,3 +20,10 @@ IPython, ipython-notebook, Beautiful Soup, (and dependencies...)
 
 * sudo apt-get install ipython-notebook
 * sudo apt-get install python-bs4  # I've seen websites that say it's python-beautifulsoup4: this is all lies!
+
+# Running it
+
+* Run bash create_subfolders.sh first to create a subfolder for each html file (I would do this in the python script if I knew how!)
+* Iterate over each html file, apply the beautiful soup python script to each:
+
+for i in *.html ; do python get-figures.py $i ; done ;
