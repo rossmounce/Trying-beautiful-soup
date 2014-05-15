@@ -3,6 +3,10 @@ Trying-beautiful-soup
 
 Trying out beautiful soup in an IPython notebook, on BMC journal article HTML with a view to parsing out figure captions
 
+# Acknowledgements
+
+Initially, I'm going from this guide: http://programminghistorian.org/lessons/intro-to-beautiful-soup (very pretty!)
+
 # Installation
 
 requirements:
