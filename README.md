@@ -9,5 +9,5 @@ requirements:
 
 IPython, ipython-notebook, Beautiful Soup, (and dependencies...)
 
-<sudo apt-get install ipython-notebook>
-<sudo apt-get install python-bs4>   # I've seen websites that say it's python-beautifulsoup4: this is all lies!
+* sudo apt-get install ipython-notebook
+* sudo apt-get install python-bs4  # I've seen websites that say it's python-beautifulsoup4: this is all lies!
