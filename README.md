@@ -25,7 +25,7 @@ IPython, ipython-notebook, Beautiful Soup, (and dependencies...)
 # Running it
 
 * Run bash create_subfolders.sh first to create a subfolder for each html file (I would do this in the python script if I knew how!)
-* Iterate over each html file, apply the beautiful soup python script to each:
+* Iterate over each html file, applying the beautiful soup python script to each:
 ```
 for i in *.html ; do python get-figures.py $i ; done ;
 ```
