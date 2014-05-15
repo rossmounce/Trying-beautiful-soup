@@ -8,9 +8,9 @@ HTML pages that require subscription access, or that are only temporarily 'free 
 
 # Acknowledgements
 
-Initially, I'm going from this guide: http://programminghistorian.org/lessons/intro-to-beautiful-soup (very pretty!)
-There's also the official docs here: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
-Looks like there's also been a Software Carpentry session on this in 2013 at KU: http://nbviewer.ipython.org/github/kcranston/2013-08-ku/blob/master/beautifulsoup/notebooks/00-BeautifulSoup-FULL.ipynb 
+* Initially, I'm going from this guide: http://programminghistorian.org/lessons/intro-to-beautiful-soup (very pretty!)
+* There's also the official docs here: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+* Looks like there's also been a Software Carpentry session on this in 2013 at KU: http://nbviewer.ipython.org/github/kcranston/2013-08-ku/blob/master/beautifulsoup/notebooks/00-BeautifulSoup-FULL.ipynb 
 
 # Installation
 
