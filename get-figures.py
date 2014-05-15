@@ -12,7 +12,7 @@ file = open(sys.argv[1]+"-URLs.txt", "wb")
 
 for tr in divfig:
     for link in tr.find_all('a'):
-        fullink = link.get ('href')
+        fullink = link.get ('href').encode("utf8")
         print fullink #print in terminal to verify results
         file.write(fullink+'\n')
 
@@ -25,8 +25,8 @@ file = open(sys.argv[1]+"-caps.txt", "wb")
 for tr in divfig:
     for link in tr.find_all('p'):
         plaintext = link.get_text ()
-        oneline = plaintext.replace('\n',' ').replace('          ',' ')
-        #print oneline
+        oneline = plaintext.replace('\n',' ').replace('          ',' ').encode("utf8")
+        print oneline
         file.write(oneline+'\n')
 
 file.flush()
