@@ -5,7 +5,8 @@ import sys, getopt
 
 soup = BeautifulSoup (open(sys.argv[1]))
 divfig = soup.find_all('div', class_="fig")
-print(divfig)
+#print(divfig)
+
 #IMAGE LINKS
 file = open(sys.argv[1]+"-URLs.txt", "wb")
 
@@ -25,7 +26,7 @@ for tr in divfig:
     for link in tr.find_all('p'):
         plaintext = link.get_text ()
         oneline = plaintext.replace('\n',' ').replace('          ',' ')
-        print oneline
+        #print oneline
         file.write(oneline+'\n')
 
 file.flush()
