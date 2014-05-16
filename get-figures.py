@@ -9,32 +9,23 @@ import os
 soup = BeautifulSoup (open(sys.argv[1]))
 divfig = soup.find_all('div', class_="fig")
 
-datadir = sys.argv[1]
-chomped = datadir[:-5]
-
-#IMAGE LINKS
-file = open("./"+chomped+"/"+chomped+"-URLs.txt", "wb")
-
-for tr in divfig:
-    for link in tr.find_all('a', href=True):
-        fullink = link.get ('href').encode("utf8")
-	#print fullink #print in terminal to verify results
-        file.write(fullink+'\n')
-
-file.flush()
-file.close()
 
 datadir = sys.argv[1]
 chomped = datadir[:-5]
 #GIFs
 file = open("./"+chomped+"/"+chomped+"-gif.txt", "wb")
 
+for link in soup.find('h5'):
+    #print(link.get('href'))
+    baseurl = link.get('href')
+    #print baseurl
+
 for tr in divfig:
     for link in tr.find_all('img', src=True):
         fullink = link.get ('src').encode("utf8")
         #print fullink #print in terminal to verify results
         dirname = os.path.splitext("sys.argv[1]")[0]
-        file.write(fullink+'\n')
+        file.write(baseurl+fullink[:-4]+"-l.jpg"'\n')
 
 file.flush()
 file.close()
