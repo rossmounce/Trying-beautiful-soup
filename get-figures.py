@@ -13,7 +13,7 @@ divfig = soup.find_all('div', class_="fig")
 datadir = sys.argv[1]
 chomped = datadir[:-5]
 #GIFs
-file = open("./"+chomped+"/"+chomped+"-gif.txt", "wb")
+file = open("./"+chomped+"/"+chomped+"-jpg.txt", "wb")
 
 for link in soup.find('h5'):
     #print(link.get('href'))
