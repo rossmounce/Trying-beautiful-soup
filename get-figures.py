@@ -25,7 +25,7 @@ for tr in divfig:
         fullink = link.get ('src').encode("utf8")
         #print fullink #print in terminal to verify results
         dirname = os.path.splitext("sys.argv[1]")[0]
-        file.write(baseurl+fullink[:-4]+"-l.jpg"'\n')
+        file.write(baseurl+fullink[:-4]+".jpg"'\n')
 
 file.flush()
 file.close()
