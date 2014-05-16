@@ -23,9 +23,9 @@ for link in soup.find('h5'):
 for tr in divfig:
     for link in tr.find_all('img', src=True):
         fullink = link.get ('src').encode("utf8")
-        #print fullink #print in terminal to verify results
-        dirname = os.path.splitext("sys.argv[1]")[0]
-        file.write(baseurl+fullink[:-4]+".jpg"'\n')
+	sep = '/bmc'
+        rest = baseurl.split(sep, 1)[0]
+        file.write(rest+fullink[:-4]+".jpg"'\n')
 
 file.flush()
 file.close()
