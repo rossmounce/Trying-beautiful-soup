@@ -26,6 +26,21 @@ file.close()
 
 datadir = sys.argv[1]
 chomped = datadir[:-5]
+#GIFs
+file = open("./"+chomped+"/"+chomped+"-gif.txt", "wb")
+
+for tr in divfig:
+    for link in tr.find_all('img', src=True):
+        fullink = link.get ('src').encode("utf8")
+        #print fullink #print in terminal to verify results
+        dirname = os.path.splitext("sys.argv[1]")[0]
+        file.write(fullink+'\n')
+
+file.flush()
+file.close()
+
+datadir = sys.argv[1]
+chomped = datadir[:-5]
 #CAPTIONS
 file = open("./"+chomped+"/"+chomped+"-caps.txt", "wb")
 
