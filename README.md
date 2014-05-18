@@ -17,6 +17,7 @@ HTML pages that require subscription access, or that are only temporarily 'free 
 
 requirements:
 
+I used python 2.7.6. When I tried on an older machine with python 2.7.3 it didn't work :S
 IPython, ipython-notebook, Beautiful Soup, (and dependencies...)
 
 * sudo apt-get install ipython-notebook
