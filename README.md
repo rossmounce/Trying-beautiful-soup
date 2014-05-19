@@ -31,4 +31,6 @@ IPython, ipython-notebook, Beautiful Soup, (and dependencies...)
 bash create_subfolders.sh ;
 for i in *.html ; do python get-figures.py $i ; done ;
 bash download-figs.sh ;
+bash remove-apos.sh ; #Removes all apostrophes from all caption plaintext files
+bash embedxmpdesc.sh ; # this calls on "doexif.sh" so make sure its executable
 ```
