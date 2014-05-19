@@ -32,7 +32,8 @@ bash create_subfolders.sh ;
 for i in *.html ; do python get-figures.py $i ; done ;
 bash download-figs.sh ;
 bash remove-apos.sh ; #Removes all apostrophes from all caption plaintext files
-bash embedxmpdesc.sh ; # this calls on "doexif.sh" so make sure its executable
+bash exif-BMC-CCBY.sh ; #embeds constant strings : BioMed Central & CC BY 
+bash embedxmpdesc.sh ; # this script calls on "doexif.sh" so make sure it's executable
 ```
 
 bash create_subfolders can be happily re-run without losing what has been done in the next two lines
