@@ -12,4 +12,5 @@ for i in $(cat pwd.txt); do
   cd $i 
 	echo $i
   sed -i  's/\x27/ /g' *caps.txt
+	sed -i  's/\x27/ /g' authors.txt
 done
