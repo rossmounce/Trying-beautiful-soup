@@ -14,7 +14,7 @@ for i in $(cat pwd.txt); do
 
 NUMOFLINES=$(wc -l < *caps.txt)
 CAPSFILE=$(ls *caps.txt)
-IMAGES=(./*.png)
+IMAGES=(./*.jpg)
 #echo $NUMOFLINES
 #echo ${IMAGES[0]}
 #echo ${IMAGES[1]}
