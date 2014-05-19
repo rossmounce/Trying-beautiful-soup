@@ -34,3 +34,5 @@ bash download-figs.sh ;
 bash remove-apos.sh ; #Removes all apostrophes from all caption plaintext files
 bash embedxmpdesc.sh ; # this calls on "doexif.sh" so make sure its executable
 ```
+
+bash create_subfolders can be happily re-run without losing what has been done in the next two lines
