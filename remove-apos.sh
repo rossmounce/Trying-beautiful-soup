@@ -10,5 +10,6 @@ find * -maxdepth 0 -type d -exec bash -c "cd \"{}\"; pwd" \;  > pwd.txt
 # Loop through pwd cd'ing into each directory then pdftotext all PDFs within each subdirectory
 for i in $(cat pwd.txt); do
   cd $i 
-  sed  's/\x27/ /g' *caps.txt
+	echo $i
+  sed -i  's/\x27/ /g' *caps.txt
 done
