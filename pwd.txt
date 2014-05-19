@@ -1,6 +1,0 @@
-/home/ross/workspace/mygithub/Trying-beautiful-soup/biologydirect-1-1-19
-/home/ross/workspace/mygithub/Trying-beautiful-soup/biomedcentral1471-2164-7-151
-/home/ross/workspace/mygithub/Trying-beautiful-soup/genomebiology2013-14-6-122
-/home/ross/workspace/mygithub/Trying-beautiful-soup/jbiol-8-6-54
-/home/ross/workspace/mygithub/Trying-beautiful-soup/parasitesandvectors-3-1-115
-/home/ross/workspace/mygithub/Trying-beautiful-soup/virologyj-11-1-26
